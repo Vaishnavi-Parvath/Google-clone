@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image:url(wallpaper.jpg);
+            background-size:cover ;
+            background-position: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* margin: 20px; */  
+        }
+
+        .contents {
+            width: 60%;
+            height: 50%;
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .gimage {
+            width: 40%;
+            height: 25%;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            width: 80%;
+            background-color: white;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .in {
+            border: none;
+            outline: none;
+            width: 600px;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        i {
+            font-size: 15px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .fav-card {
+            width: 90px;
+            height: 90px;
+            /* background-color: white; */
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .fav-card:hover {
+            background-color: rgba(255, 255, 255, 0.199);
+
+            .dots {
+                opacity: 1;
+                transition: 0.5s all ease;
+            }
+        }
+
+        .favourate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.296);
+            border-radius: 50%;
+        }
+
+        .imagelogo {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .fav-t{
+            font-size: 13px;
+            margin: 3px;
+            color: white;
+        }
+
+        .dots {
+            color: rgb(255, 255, 255);
+            position: relative;
+            left: 30px;
+            opacity: 0;
+
+        }
+
+        .top-right {
+            width: 200px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex; 
+            justify-content:space-evenly;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+        }
+        .grid{
+            width:0px;
+            margin: 4px;
+        }
+        .dotts{
+            display: flex;
+        }
+        .giff{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+        }
+        .addshortcut{
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contents">
+            <img src="google.png" alt="" class="gimage" srcset="">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://www.google.com/search">
+                    <input type="text" name="q" id="" placeholder="Search Google or type a URL" class="in">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="favourate">
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="logo-chatgpt-png-42622.png" alt="" srcset="" class="imagelogo">
+                    </div>
+                    <p class="fav-t">Chat GPT</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" alt="" srcset="" class="imagelogo">
+                    </div>
+                    <p class="fav-t">Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="spotify-logo-png-7053.png" alt="" srcset="" class="imagelogo">
+                    </div>
+                    <p class="fav-t">Spotify</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="leetcode.png" alt="" srcset="" class="imagelogo">
+                    </div>
+                    <p class="fav-t">leetcode</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="servicenow logo.jpeg" alt="" srcset="" class="imagelogo">
+                    </div>
+                    <p class="fav-t">servicenow</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle ">
+                         <i class="addshortcut">+</i>
+                    </div>
+                    <p class="fav-t">Add Shortcut</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="top-right">
+            <p>Gmail</p>
+            <p>Images</p>
+            <div class="dotts">
+                <i class="fa-solid fa-ellipsis-vertical grid"></i>
+                <i class="fa-solid fa-ellipsis-vertical grid"></i>
+                <i class="fa-solid fa-ellipsis-vertical grid"></i>
+            </div>
+            <img src="profile.gif" alt="" srcset="" class="giff">
+
+        </div>
+    </div>
+</body>
+
+</html>
